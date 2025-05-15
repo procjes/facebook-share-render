@@ -11,9 +11,9 @@ Follow these steps to deploy your Facebook Share Tool to Render:
 
 1. Create a new repository on GitHub containing these files:
    - `app.py` (your main application file)
-   - `render-requirements.txt` (dependencies)
+   - `requirements.txt` (dependencies)
    - `render.yaml` (Render configuration)
-   - `.streamlit/config-render.toml` (Streamlit configuration for Render)
+   - `.streamlit/config.toml` (Streamlit configuration for Render)
 
 ## Step 3: Deploy on Render
 
@@ -25,7 +25,7 @@ Follow these steps to deploy your Facebook Share Tool to Render:
 4. Configure as follows:
    - **Name**: fb-share-tool
    - **Runtime**: Python
-   - **Build Command**: `pip install -r render-requirements.txt`
+   - **Build Command**: `pip install -r requirements.txt`
    - **Start Command**: `streamlit run app.py --server.port $PORT --server.address 0.0.0.0`
 5. Click "Create Web Service"
 
