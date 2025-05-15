@@ -5,4 +5,4 @@ requests==2.31.0
 httpx==0.28.1
 bs4==0.0.1
 beautifulsoup4==4.12.2
-rich==14.0.0
+rich<14,>=10.14.0
